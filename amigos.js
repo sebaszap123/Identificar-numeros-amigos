@@ -3,6 +3,7 @@ class App{
         this.maximo = 3000
         this.num1 = 220
         this.numsAmigos = new Array()
+        this.name = 'Miguel Sebastián Frausto Zapata'
     }
     getSumDivisibles(numero){
         let suma = 0;
@@ -51,7 +52,17 @@ class App{
         }
         return pass
     }
+    setNumMax(newMax){
+        this.maximo = newMax;
+    }
+    sayName(){
+        console.log(this.name)
+    }
 }
 let app = new App();
+let app2 = new App();
 console.log('Prueba de numAmigos');
 console.log(app.getAllAmigos());
+app2.setNumMax(10000);
+console.log(app2.getAllAmigos());
+app.sayName();
